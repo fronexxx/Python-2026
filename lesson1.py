@@ -324,18 +324,18 @@ l2 = [4, 3, 4, 3, 2, 6]
 # res = [i*2 for i in l2 if i%2 == 0]
 # res = [i*2 if i%2 == 0 else i for i in l2]
 # print(res)
-
-l2d = [
-    [1, 2, 3, 4, 5],
-    [6, 7, 8, 9, 10]
-
-]
-
-# l = [i for j in l2d for i in j]
-
-l = []
-for i in l2d:
-    for j in i:
-        l.append(j)
-
-print(l)
+#
+# l2d = [
+#     [1, 2, 3, 4, 5],
+#     [6, 7, 8, 9, 10]
+#
+# ]
+#
+# # l = [i for j in l2d for i in j]
+#
+# l = []
+# for i in l2d:
+#     for j in i:
+#         l.append(j)
+#
+# print(l)
