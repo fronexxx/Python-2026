@@ -148,20 +148,37 @@ data = [
 ]
 
 
+# def cut(arr):
+#     res = []
+#     gens = [(i['id'] for i in item if i['id'] not in res) for item in arr]
+#
+#     while gens:
+#         try:
+#             gen = gens.pop(0)
+#             res.append(next(gen))
+#             gens.append(gen)
+#         except StopIteration:
+#             pass
+#
+#     return res
+
+
+# print(cut(data))
+
 def cut(arr):
     res = []
     gens = [(i['id'] for i in item if i['id'] not in res) for item in arr]
-
     while gens:
         try:
             gen = gens.pop(0)
             res.append(next(gen))
             gens.append(gen)
+
+
         except StopIteration:
             pass
-
     return res
 
 
-print(cut(data))
 
+print(cut(data))
